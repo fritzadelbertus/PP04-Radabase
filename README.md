@@ -16,7 +16,7 @@ A Personal Project to create a User Interface for a database.
 
 ## Overview
 
-This is a Search Web App to find past exam papers from a database. User's are having difficulties on finding the papers they need directly in the database. This project aim to solve that problem.
+This is a Search Web App to find past exam papers from a database. User's are having difficulties on finding the papers they need directly in the database. This project's goal is to solve that problem.
 
 ### Screenshot
 
