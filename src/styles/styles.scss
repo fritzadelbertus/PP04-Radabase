@@ -1,0 +1,98 @@
+@import './colors.scss';
+@import './tabelsoal.scss';
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dangrek', cursive;
+}
+button:hover, select:hover {
+  cursor: pointer;
+}
+.center-text {
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+  height: 100vh;
+  min-height: 100vh;
+  & > {
+    header {
+      display: flex;
+      align-items: center;
+      flex-basis: 10%;
+      padding: 10px 20px;
+      width: 100vw;
+    }
+    main {
+      height: 85%;
+    }
+  } 
+}
+
+loading-screen {
+  z-index: 99;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  picture {
+    animation: loadrotate linear 10s infinite;
+  }
+  @keyframes loadrotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // For Desktop
+  .App {
+    & > {
+      header {
+        padding: 0 50px;
+        flex-basis: 12%;
+      }
+      main {
+        flex-basis: 70%;
+      }
+    }
+  }
+  .TabelSoal {
+    max-width: 1000px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+    form {
+      justify-content: space-evenly;
+    }
+    .table-navigation-btn {
+      justify-content: center;
+      gap: 30px;
+    }
+    .box-kartu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .KartuSoal {
+      flex-basis: 45%;
+    }
+  }
+}
