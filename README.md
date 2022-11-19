@@ -56,5 +56,3 @@ This project is a one write deploy app. The author is very open for feedback and
 - LinkedIn - [Fritz Adelbertus](https://www.linkedin.com/in/fritzadelbertus/)
 
 ## Acknowledgments
-
-Special thanks to Himpunan Mahasiswa Departemen Matematika Departemen Radian for the source and allowing this project to be published.
