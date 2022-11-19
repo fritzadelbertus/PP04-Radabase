@@ -16,8 +16,10 @@ class DataSource {
       for (let i = 1; i < lines.length; i += 1) {
         const obj = {};
         const currentline = lines[i].split(',');
-        for (let j = 0; j < headers.length; j += 1) {
-          obj[headers[j]] = currentline[j];
+        for (let j = 2; j < headers.length; j += 1) {
+          if (j === 2 || j === 3 || j === 4 || j === 5 || j === 7 || j === 8 || j === 11) {
+            obj[headers[j]] = currentline[j];
+          }
         }
         result.push(obj);
       }

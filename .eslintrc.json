@@ -17,6 +17,9 @@
     "plugins": [
         "react"
     ],
+    "ignorePatterns": [
+        "vite.config.js"
+    ],
     "rules": {
         "jsx-a11y/control-has-associated-label": "off"
     }

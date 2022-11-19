@@ -8,9 +8,7 @@ class DataControl {
       .then((response) => {
         database.fullDataSoal = response;
         database.noCategoryData = response.filter((item) => (
-          !item.Jenis.match(/kuis 1/i) && !item.Jenis.match(/kuis 2/i)
-          && !item.Jenis.match(/kuis 3/i) && !item.Jenis.match(/kuis 4/i)
-          && !item.Jenis.match(/uts/i) && !item.Jenis.match(/uas/i)
+          !item.Jenis.match(/kuis \d/i) && !item.Jenis.match(/uts/i) && !item.Jenis.match(/uas/i)
         ));
       })
       .then(() => false);
