@@ -24,8 +24,8 @@ This is a Search Web App to find past exam papers from a database. User's are ha
 
 ### Links
 
-- Submission URL: [Github Repo](https://github.com/fritzadelbertus/PP04-Radabase)
-- Live Site URL: [Github Pages](https://fritzadelbertus.github.io/PP04-Radabase/)
+- Submission URL: [Github Repo](https://github.com/fritzadelbertus/PP04_Radabase)
+- Live Site URL: [Github Pages](https://fritzadelbertus.github.io/PP04_Radabase/)
 
 ## My process
 
