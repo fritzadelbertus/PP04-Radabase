@@ -5,13 +5,15 @@ class DataControl {
   static initDataSoal() {
     if (database.fullDataSoal !== null) return Promise.resolve(false);
     return DataSource.getDataSoal()
-      .then((response) => {
-        database.fullDataSoal = response;
-        database.noCategoryData = response.filter((item) => (
-          !item.Jenis.match(/kuis \d/i) && !item.Jenis.match(/uts/i) && !item.Jenis.match(/uas/i)
-        ));
-      })
+      .then((response) => { database.fullDataSoal = response; })
       .then(() => false);
+  }
+
+  static filterOthers() {
+    if (database.fullDataSoal === null) return;
+    database.noCategoryData = database.fullDataSoal.filter((item) => (
+      !item.Jenis.match(/kuis \d/i) && !item.Jenis.match(/uts/i) && !item.Jenis.match(/uas/i)
+    ));
   }
 
   static getFullDataSoal() {

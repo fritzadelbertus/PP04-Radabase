@@ -10,7 +10,8 @@ function App() {
   useEffect(() => {
     DataControl.initDataSoal()
       .then((e) => { setInitialLoading(e); })
-      .then(() => { setShowTabelSoal(true); });
+      .then(() => { setShowTabelSoal(true); })
+      .then(DataControl.filterOthers());
   });
 
   return (
